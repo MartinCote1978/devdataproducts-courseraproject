@@ -20,6 +20,8 @@ shinyUI(navbarPage("Tooth Length Predictor",
                                   tags$li("Click the Submit button.")
                                 ),
                                 
+                                p("Please note that it takes a few seconds for the server.R to complete its process using the 'caret' pacakage and determine the best model."),
+                                
                                 h4("Predicted Length"),
                                 verbatimTextOutput("len")
                               )
